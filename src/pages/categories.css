@@ -1,0 +1,10 @@
+.Categories {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.check {
+  font-size: 5vw;
+  margin: 8vw 0;
+}

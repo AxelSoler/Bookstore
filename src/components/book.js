@@ -12,7 +12,6 @@ const Book = (props) => {
           {title}
         </h3>
         <h3>
-          by
           {author}
         </h3>
       </div>
@@ -30,5 +29,7 @@ export default Book;
 Book.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-  genre: PropTypes.string.isRequired,
+  genre: PropTypes.string,
 };
+
+Book.defaultProps = { genre: '' };
