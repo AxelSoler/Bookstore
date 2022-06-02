@@ -3,10 +3,9 @@ import React from 'react';
 import './book.css';
 
 const Book = (props) => {
-  const { title, author, genre } = props;
+  const { title, author} = props;
   return (
     <div className="bookSection">
-      <h4>{genre}</h4>
       <div>
         <h3>
           {title}
@@ -29,7 +28,4 @@ export default Book;
 Book.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-  genre: PropTypes.string,
 };
-
-Book.defaultProps = { genre: '' };
