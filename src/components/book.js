@@ -3,7 +3,7 @@ import React from 'react';
 import './book.css';
 
 const Book = (props) => {
-  const { title, author} = props;
+  const { title, author } = props;
   return (
     <div className="bookSection">
       <div>
