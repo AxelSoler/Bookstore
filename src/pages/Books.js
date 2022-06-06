@@ -1,26 +1,11 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import Book from '../components/book';
 import './books.css';
 import AddBook from '../components/addBook';
 
 const Books = () => {
-  const allBooks = [
-    {
-      id: 1,
-      title: 'The Hunger Games',
-      author: 'Suzanne Collins',
-    },
-    {
-      id: 2,
-      title: 'Dune',
-      author: 'Frank Herbert',
-    },
-    {
-      id: 3,
-      title: 'Capital in the Twenty-First Century',
-      author: 'Suzanne Collins',
-    },
-  ];
+  const allBooks = useSelector((state) => state.allBooks);
 
   return (
     <div className="books">
