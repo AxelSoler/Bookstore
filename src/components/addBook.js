@@ -19,8 +19,8 @@ const AddBook = () => {
     <div>
       <h2>ADD NEW BOOK</h2>
       <form id="form" onSubmit={submitBook}>
-        <input id="title" placeholder="Book title" />
-        <input id="author" placeholder="Author" />
+        <input id="title" placeholder="Book title" required />
+        <input id="author" placeholder="Author" required />
         <button type="submit">ADD BOOK</button>
       </form>
     </div>

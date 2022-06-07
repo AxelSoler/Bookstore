@@ -6,14 +6,13 @@ import AddBook from '../components/addBook';
 
 const Books = () => {
   const allBooks = useSelector((state) => state.allBooks);
-  console.log(allBooks);
 
   return (
     <div className="books">
       <ul className="ulBooks">
         <li className="book">
           {allBooks.map((book) => (
-            <Book key={book.id} title={book.title} author={book.author} />
+            <Book key={book.id} id={book.id} title={book.title} author={book.author} />
           ))}
         </li>
       </ul>
