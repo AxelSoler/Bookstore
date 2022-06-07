@@ -24,7 +24,7 @@ const booksReducer = (state = booksArray, action) => {
     case ADD_BOOK:
       return [
         ...state,
-        action.book,
+        action.book.id,
       ];
     case DELETE_BOOK:
       return state.filter((book) => book.id !== action.id);
@@ -33,9 +33,13 @@ const booksReducer = (state = booksArray, action) => {
   }
 };
 
-export const addBook = (id, title, author) => ({
+export const addNewBook = (idNumber, titleBook, authorBook) => ({
   type: ADD_BOOK,
-  book: { id, title, author },
+  book: {
+    id: idNumber,
+    title: titleBook,
+    author: authorBook,
+  },
 });
 
 export const deleteBook = (id) => ({

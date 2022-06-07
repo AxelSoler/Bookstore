@@ -6,6 +6,7 @@ import AddBook from '../components/addBook';
 
 const Books = () => {
   const allBooks = useSelector((state) => state.allBooks);
+  console.log(allBooks);
 
   return (
     <div className="books">
