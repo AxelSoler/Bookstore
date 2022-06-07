@@ -5,7 +5,6 @@ import { deleteBook } from '../redux/books/books';
 import './book.css';
 
 const Book = (props) => {
-  console.log(props);
   const dispatch = useDispatch();
   const { id, title, author } = props;
 
