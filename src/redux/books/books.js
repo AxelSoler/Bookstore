@@ -45,7 +45,6 @@ export const getListBook = () => async (dispatch) => {
   const listBook = [];
   const response = await fetch(urlAPI);
   const res = await response.json();
-  console.log(res);
   const id = Object.keys(res);
   const values = Object.values(res);
   values.forEach((element, index) => {
