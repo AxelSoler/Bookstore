@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { addNewBook } from '../redux/books/books';
+import { addBookAPI } from '../redux/books/books';
 
 const AddBook = () => {
   const dispatch = useDispatch();
@@ -11,7 +11,7 @@ const AddBook = () => {
     const id = uuidv4();
     const title = document.getElementById('title').value;
     const author = document.getElementById('author').value;
-    dispatch(addNewBook({ id, title, author }));
+    dispatch(addBookAPI({ id, title, author }));
     document.getElementById('form').reset();
   };
 
