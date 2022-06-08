@@ -53,11 +53,29 @@ export const getListBook = () => async (dispatch) => {
         id: id[index],
         title: element[0].title,
         author: element[0].author,
-        category: 'Action',
+        category: '',
       },
     );
   });
   dispatch(getBook(listBook));
+};
+
+export const addBookAPI = (items) => async (dispatch) => {
+  const res = await fetch(urlAPI, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(
+      {
+        item_id: items.id,
+        title: items.title,
+        author: items.author,
+        category: '',
+      },
+    ),
+  });
+  if (res.status === 201) {
+    dispatch(addNewBook(items));
+  }
 };
 
 export default booksReducer;
