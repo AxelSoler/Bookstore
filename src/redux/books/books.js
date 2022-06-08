@@ -41,6 +41,35 @@ export const getBook = (book) => ({
   payload: book,
 });
 
+export const addBookAPI = (items) => async (dispatch) => {
+  const res = await fetch(urlAPI, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(
+      {
+        item_id: items.id,
+        title: items.title,
+        author: items.author,
+        category: '',
+      },
+    ),
+  });
+  if (res.status === 201) {
+    dispatch(addNewBook(items));
+  }
+};
+
+export const deleteBookAPI = (itemid) => async (dispatch) => {
+  const deleteItemAPI = urlAPI + itemid;
+  const res = await fetch(deleteItemAPI, {
+    method: 'DELETE',
+    headers: { 'Content-Type': 'application/json' },
+  });
+  if (res.status === 201) {
+    dispatch(deleteBook(itemid));
+  }
+};
+
 export const getListBook = () => async (dispatch) => {
   const listBook = [];
   const response = await fetch(urlAPI);
@@ -58,24 +87,6 @@ export const getListBook = () => async (dispatch) => {
     );
   });
   dispatch(getBook(listBook));
-};
-
-export const addBookAPI = (items) => async (dispatch) => {
-  const res = await fetch(urlAPI, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(
-      {
-        item_id: items.id,
-        title: items.title,
-        author: items.author,
-        category: '',
-      },
-    ),
-  });
-  if (res.status === 201) {
-    dispatch(addNewBook(items));
-  }
 };
 
 export default booksReducer;

@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { deleteBook } from '../redux/books/books';
+import { deleteBookAPI } from '../redux/books/books';
 import './book.css';
 
 const Book = (props) => {
   const dispatch = useDispatch();
   const { id, title, author } = props;
 
-  const removeBook = () => dispatch(deleteBook(id));
+  const removeBook = () => dispatch(deleteBookAPI(id));
 
   return (
     <div className="bookSection">
