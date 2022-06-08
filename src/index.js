@@ -6,6 +6,8 @@ import './index.css';
 import App from './App';
 import store from './redux/configureStore';
 
+const api = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/jtHTTFgRxzKLYPxv3yq7/books';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
