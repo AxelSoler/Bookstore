@@ -12,18 +12,18 @@ const Book = (props) => {
 
   return (
     <div className="bookSection">
-      <div>
+      <div className="bookName">
         <h3>
           {title}
         </h3>
-        <h3>
+        <h4>
           {author}
-        </h3>
+        </h4>
       </div>
       <div className="buttonSection">
         <button type="button">Comments</button>
         <button onClick={removeBook} type="button">Remove</button>
-        <button type="button">Edit</button>
+        <button id="editBtn" type="button">Edit</button>
       </div>
     </div>
   );

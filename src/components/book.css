@@ -1,8 +1,40 @@
 .bookSection {
   display: flex;
   flex-direction: column;
+  margin-top: 24px;
 }
 
 button {
   width: max-content;
+  color: #0290ff;
+  background-color: #fff;
+  border: none;
+  border-right: 1px solid #e8e8e8;
+  cursor: pointer;
+  font-family: RobotoSlab,serif;
+  padding-right: 12px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  color: #0290ff;
+  font-family: RobotoSlab,serif;
+}
+
+.bookName {
+  margin: 24px 0;
+}
+
+.buttonSection {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  width: 180px;
+}
+
+#editBtn {
+  border-right: none;
 }

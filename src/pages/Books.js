@@ -15,11 +15,9 @@ const Books = () => {
   return (
     <div className="books">
       <ul className="ulBooks">
-        <li className="book">
-          {allBooks.map((book) => (
-            <Book key={book.id} id={book.id} title={book.title} author={book.author} />
-          ))}
-        </li>
+        {allBooks.map((book) => (
+          <li key={book.id} className="book"><Book id={book.id} title={book.title} author={book.author} /></li>
+        ))}
       </ul>
       <div>
         <AddBook />
