@@ -9,13 +9,13 @@ const App = () => (
   <div className="app">
     <nav className="navMenu">
       <div className="leftNav">
-        <h1>Bookstore</h1>
+        <h1>Bookstore CMS</h1>
         <ul className="ulMenu">
-          <li className="link"><Link to="/">Books</Link></li>
-          <li className="link"><Link to="Categories">Categories</Link></li>
+          <li className="link"><Link to="/">BOOKS</Link></li>
+          <li className="link"><Link to="Categories">CATEGORIES</Link></li>
         </ul>
       </div>
-      <div className="rigthNav"><CgProfile size="2em" /></div>
+      <div className="rigthNav"><CgProfile size="2em" color="blue" /></div>
     </nav>
     <Routes>
       <Route path="/" element={<Books />} />

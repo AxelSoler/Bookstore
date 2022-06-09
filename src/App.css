@@ -1,5 +1,6 @@
 .app {
   width: 100%;
+  margin-top: 48px;
 }
 
 .navMenu {
@@ -7,18 +8,19 @@
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
+  padding: 24px 0;
 }
 
 .leftNav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 30%;
-  margin-left: 10%;
+  width: 50%;
+  margin-left: 8%;
 }
 
 .rigthNav {
-  margin-right: 10%;
+  margin-right: 8%;
 }
 
 .ulMenu {
@@ -29,11 +31,15 @@
 }
 
 a {
-  color: gray;
   text-decoration: none;
+  color: #6d6b6b;
+  font-size: .813rem;
+  letter-spacing: 1.9px;
 }
 
 h1 {
   color: #0290ff;
-  font-size: 36px;
+  font-size: 2rem;
+  font-weight: 700;
+  width: 100%;
 }
