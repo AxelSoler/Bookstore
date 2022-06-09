@@ -11,7 +11,7 @@
   border: none;
   border-right: 1px solid #e8e8e8;
   cursor: pointer;
-  font-family: RobotoSlab,serif;
+  font-family: RobotoSlab, serif;
   padding-right: 12px;
 }
 
@@ -21,7 +21,7 @@ h3 {
 
 h4 {
   color: #0290ff;
-  font-family: RobotoSlab,serif;
+  font-family: RobotoSlab, serif;
 }
 
 .bookName {
@@ -57,17 +57,17 @@ h4 {
 
 .completedBook {
   align-self: center;
-  margin-left: 4%; 
+  margin-left: 4%;
 }
 
 .completedBook p:nth-child(1) {
   font-size: 36px;
   color: #121212;
-  font-family: Montserrat,sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 .completedBook p:nth-child(2) {
-  font-family: Montserrat,sans-serif;
+  font-family: Montserrat, sans-serif;
   color: #817f7f;
 }
 
@@ -76,22 +76,22 @@ h4 {
   background-color: #0290ff;
   border: 1px solid #e8e8e8;
   border-radius: 4px;
-  font-family: RobotoSlab,serif;
+  font-family: RobotoSlab, serif;
   font-size: 16px;
   font-weight: 700;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   padding: 8px 24px;
   cursor: pointer;
 }
 
-.bookChapter P {
-  font-family: RobotoSlab,serif;
+.bookChapter p {
+  font-family: RobotoSlab, serif;
 }
 
-.bookChapter P:nth-child(1) {
+.bookChapter p:nth-child(1) {
   color: #8b8a8a;
 }
 
-.bookChapter P:nth-child(2) {
+.bookChapter p:nth-child(2) {
   margin: 12px 0 24px 0;
 }
