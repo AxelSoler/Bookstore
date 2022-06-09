@@ -60,6 +60,18 @@ h4 {
   margin-left: 4%;
 }
 
+.bookChapter p {
+  font-family: RobotoSlab, serif;
+}
+
+.bookChapter p:nth-child(1) {
+  color: #8b8a8a;
+}
+
+.bookChapter p:nth-child(2) {
+  margin: 12px 0 24px 0;
+}
+
 .completedBook p:nth-child(1) {
   font-size: 36px;
   color: #121212;
@@ -82,16 +94,4 @@ h4 {
   letter-spacing: 0.5px;
   padding: 8px 24px;
   cursor: pointer;
-}
-
-.bookChapter p {
-  font-family: RobotoSlab, serif;
-}
-
-.bookChapter p:nth-child(1) {
-  color: #8b8a8a;
-}
-
-.bookChapter p:nth-child(2) {
-  margin: 12px 0 24px 0;
 }
