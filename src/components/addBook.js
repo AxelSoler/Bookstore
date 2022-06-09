@@ -2,6 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { addBookAPI } from '../redux/books/books';
+import './addBook.css';
 
 const AddBook = () => {
   const dispatch = useDispatch();
@@ -16,12 +17,12 @@ const AddBook = () => {
   };
 
   return (
-    <div>
-      <h2>ADD NEW BOOK</h2>
+    <div className="addNewBook">
+      <h2 id="addTitle">ADD NEW BOOK</h2>
       <form id="form" onSubmit={submitBook}>
         <input id="title" placeholder="Book title" required />
         <input id="author" placeholder="Author" required />
-        <button type="submit">ADD BOOK</button>
+        <button id="addBtn" type="submit">ADD BOOK</button>
       </form>
     </div>
   );
