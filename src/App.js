@@ -6,7 +6,7 @@ import Books from './pages/Books';
 import Categories from './pages/Categories';
 
 const App = () => (
-  <div className="App">
+  <div className="app">
     <nav className="navMenu">
       <div className="leftNav">
         <h1>Bookstore</h1>
