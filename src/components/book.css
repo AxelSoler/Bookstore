@@ -1,6 +1,6 @@
 .bookSection {
   display: flex;
-  flex-direction: column;
+  width: 100%;
   margin-top: 24px;
 }
 
@@ -37,4 +37,9 @@ h4 {
 
 #editBtn {
   border-right: none;
+}
+
+.leftPart {
+  display: flex;
+  flex-direction: column;
 }
