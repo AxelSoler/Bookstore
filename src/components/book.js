@@ -8,7 +8,9 @@ import './book.css';
 const Book = (props) => {
   const dispatch = useDispatch();
   const { id, title, author } = props;
-
+  const randomPercentage = Math.round(Math.random() * 100);
+  let randomChapter = ' ';
+  randomChapter += Math.round(Math.random() * 10);
   const removeBook = () => dispatch(deleteBookAPI(id));
 
   return (
@@ -30,20 +32,26 @@ const Book = (props) => {
       </div>
       <div className="completed">
         <CircularProgressBar
-          percent={15}
+          percent={randomPercentage}
           animationSmooth="ls ease-out"
           colorCircle="#f1f1f1"
           colorSlice="#0290ff"
           size={100}
         />
         <div className="completedBook">
-          <p>15%</p>
+          <p>
+            {randomPercentage}
+            %
+          </p>
           <p>Completed</p>
         </div>
       </div>
       <div className="bookChapter">
         <p>CURRENT CHAPTER</p>
-        <p>Chapter 4</p>
+        <p>
+          Chapter
+          {randomChapter}
+        </p>
         <button className="updateBtn" type="button">Update progress</button>
       </div>
     </div>
