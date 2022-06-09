@@ -4,7 +4,7 @@
   margin-top: 24px;
 }
 
-button {
+.bookBtn {
   width: max-content;
   color: #0290ff;
   background-color: #fff;
@@ -42,4 +42,56 @@ h4 {
 .leftPart {
   display: flex;
   flex-direction: column;
+}
+
+.completed {
+  display: flex;
+  padding-right: 72px;
+  border-right: 1px solid #e8e8e8;
+  margin: 24px 0 24px auto;
+}
+
+.bookChapter {
+  margin: 24px 10% 24px 72px;
+}
+
+.completedBook {
+  align-self: center;
+  margin-left: 4%; 
+}
+
+.completedBook p:nth-child(1) {
+  font-size: 36px;
+  color: #121212;
+  font-family: Montserrat,sans-serif;
+}
+
+.completedBook p:nth-child(2) {
+  font-family: Montserrat,sans-serif;
+  color: #817f7f;
+}
+
+.updateBtn {
+  color: white;
+  background-color: #0290ff;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  font-family: RobotoSlab,serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  padding: 8px 24px;
+  cursor: pointer;
+}
+
+.bookChapter P {
+  font-family: RobotoSlab,serif;
+}
+
+.bookChapter P:nth-child(1) {
+  color: #8b8a8a;
+}
+
+.bookChapter P:nth-child(2) {
+  margin: 12px 0 24px 0;
 }

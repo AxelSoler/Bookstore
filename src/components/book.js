@@ -23,14 +23,14 @@ const Book = (props) => {
           </h4>
         </div>
         <div className="buttonSection">
-          <button type="button">Comments</button>
-          <button onClick={removeBook} type="button">Remove</button>
-          <button id="editBtn" type="button">Edit</button>
+          <button className="bookBtn" type="button">Comments</button>
+          <button className="bookBtn" onClick={removeBook} type="button">Remove</button>
+          <button className="bookBtn" id="editBtn" type="button">Edit</button>
         </div>
       </div>
       <div className="completed">
         <CircularProgressBar
-          percent="15"
+          percent={15}
           animationSmooth="ls ease-out"
           colorCircle="#f1f1f1"
           colorSlice="#0290ff"
@@ -42,11 +42,9 @@ const Book = (props) => {
         </div>
       </div>
       <div className="bookChapter">
-        <p>Current Chapter</p>
+        <p>CURRENT CHAPTER</p>
         <p>Chapter 4</p>
-        <button type="button">
-          Update progress
-        </button>
+        <button className="updateBtn" type="button">Update progress</button>
       </div>
     </div>
   );

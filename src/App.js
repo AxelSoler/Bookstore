@@ -15,7 +15,7 @@ const App = () => (
           <li className="link"><Link to="Categories">CATEGORIES</Link></li>
         </ul>
       </div>
-      <div className="rigthNav"><CgProfile size="2em" color="blue" /></div>
+      <div className="rigthNav"><CgProfile size="2em" color="#0290ff" /></div>
     </nav>
     <Routes>
       <Route path="/" element={<Books />} />
