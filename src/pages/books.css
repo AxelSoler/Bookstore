@@ -1,0 +1,10 @@
+.ulBooks {
+  list-style: none;
+  width: 85%;
+  margin: 48px auto;
+}
+
+.book {
+  background-color: #fff;
+  padding-left: 24px;
+}
